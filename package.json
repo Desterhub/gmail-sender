@@ -1,0 +1,17 @@
+{
+  "name": "gmail-bulk-sender",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal Gmail Bulk Sender & History Manager using Gmail API and SQLite",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue.bold,magenta.bold\" \"npm run --prefix backend dev\" \"npm run --prefix frontend dev\"",
+    "dev:backend": "npm run --prefix backend dev",
+    "dev:frontend": "npm run --prefix frontend dev",
+    "build:frontend": "npm run --prefix frontend build",
+    "start": "npm run --prefix backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
